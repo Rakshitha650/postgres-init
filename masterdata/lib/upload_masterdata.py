@@ -27,7 +27,7 @@ def get_order_from_list(files_file_name):
 def upload_xlsx(files, table_order, admin_user, db_user, db_pwd, db_host, db_port):
     # Encode the password using URL encoding
     encoded_pwd = urllib.parse.quote(db_pwd)
-    engine = create_engine('postgresql://%s:%s@%s:%s/%s' % (db_user, encoded_pwd, db_host, db_port, 'mosip_master'))
+    engine = create_engine('postgresql://%s:%s@%s:%s/%s' % (db_user, encoded_pwd, db_host, db_port, 'mosip_master2'))
     for table in table_order:
         for fi in files:
             if table==os.path.basename(fi).split('.')[0]:
