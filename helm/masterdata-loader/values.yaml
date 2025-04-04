@@ -72,7 +72,7 @@ tolerations: []
 affinity: {}
 
 db:
-  host: "postgres-postgresql.postgres"
+  host: 172.31.3.128
   port: 5432
   user: masteruser
   secret:
